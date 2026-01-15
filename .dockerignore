@@ -1,0 +1,50 @@
+# =============================================================================
+# Docker Ignore - Sentry Mini Project
+# =============================================================================
+# Files/directories to exclude from Docker build context
+
+# Version Control
+# ─────────────────────────────────────────────────────────────────────────────
+.git                       # Git repository
+.gitignore                 # Git configuration
+.gitattributes             # Git attributes
+
+# Documentation
+# ─────────────────────────────────────────────────────────────────────────────
+README.md                  # README (can be added if needed)
+CHANGELOG.md               # Changelog
+LICENSE                    # License file
+
+# Configuration & Environment
+# ─────────────────────────────────────────────────────────────────────────────
+.env                       # Environment variables (use --env-file flag)
+.env.local                 # Local environment
+.env.*.local               # Environment-specific local
+.dockerignore              # This file itself
+
+# Dependencies & Build
+# ─────────────────────────────────────────────────────────────────────────────
+vendor/                    # Composer dependencies (will be installed in Docker)
+composer.lock              # Composer lock (will be generated)
+node_modules/              # NPM packages (if using Node.js)
+
+# IDE & OS Files
+# ─────────────────────────────────────────────────────────────────────────────
+.DS_Store                  # macOS files
+.idea/                     # IDE settings
+.vscode/                   # VS Code settings
+*.swp                      # Vim files
+.project                   # Eclipse
+
+# Logs & Temporary
+# ─────────────────────────────────────────────────────────────────────────────
+*.log                      # Log files
+*.tmp                      # Temporary files
+.cache/                    # Cache directory
+
+# Testing & CI/CD
+# ─────────────────────────────────────────────────────────────────────────────
+.github/                   # GitHub workflows
+.gitlab-ci.yml             # GitLab CI
+.travis.yml                # Travis CI
+.phpunit.result.cache      # PHPUnit cache
