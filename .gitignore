@@ -4,31 +4,31 @@
 
 # Dependency & Build
 # ─────────────────────────────────────────────────────────────────────────────
-vendor/                    # Composer dependencies
-composer.lock              # Composer lock file
+vendor/ # Composer dependencies
+composer.lock # Composer lock file
 
 # Environment & Configuration
 # ─────────────────────────────────────────────────────────────────────────────
-.env                       # Local environment variables (NEVER commit!)
-.env.local                 # Local environment overrides
-.env.*.local               # Environment-specific local configs
+.env # Local environment variables (NEVER commit!)
+.env.local # Local environment overrides
+.env.*.local # Environment-specific local configs
 
 # IDE & OS Files
 # ─────────────────────────────────────────────────────────────────────────────
-.DS_Store                  # macOS system files
-.idea/                     # PHPStorm/IntelliJ
-.vscode/                   # VS Code settings
-*.swp                      # Vim swap files
-*.swo                      # Vim backup files
-*~                         # Backup files
-.project                   # Eclipse project file
+.DS_Store # macOS system files
+.idea/ # PHPStorm/IntelliJ
+.vscode/ # VS Code settings
+*.swp # Vim swap files
+*.swo # Vim backup files
+*~ # Backup files
+.project # Eclipse project file
 
 # Logs & Temporary
 # ─────────────────────────────────────────────────────────────────────────────
-*.log                      # Log files
-*.tmp                      # Temporary files
-.cache/                    # Cache directory
+*.log # Log files
+*.tmp # Temporary files
+.cache/ # Cache directory
 
 # Testing
 # ─────────────────────────────────────────────────────────────────────────────
-.phpunit.result.cache      # PHPUnit cache
+.phpunit.result.cache # PHPUnit cache
