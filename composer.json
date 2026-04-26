@@ -1,6 +1,6 @@
 {
     "name": "demo/sentry-mini",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Mini Sentry Integration Project",
     "require": {
         "php": ">=8.0",

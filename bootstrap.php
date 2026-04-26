@@ -10,7 +10,7 @@ $dotenv->safeLoad();
 // Get Sentry config from .env with defaults
 $sentryDsn = $_ENV['SENTRY_DSN'] ?? $_SERVER['SENTRY_DSN'] ?? '';
 $environment = $_ENV['SENTRY_ENVIRONMENT'] ?? $_SERVER['SENTRY_ENVIRONMENT'] ?? 'development';
-$release = $_ENV['SENTRY_RELEASE'] ?? $_SERVER['SENTRY_RELEASE'] ?? 'mini-project@1.0.0';
+$release = $_ENV['SENTRY_RELEASE'] ?? $_SERVER['SENTRY_RELEASE'] ?? 'mini-project@0.1.0';
 $tracesSampleRate = (float)($_ENV['SENTRY_TRACES_SAMPLE_RATE'] ?? $_SERVER['SENTRY_TRACES_SAMPLE_RATE'] ?? 1.0);
 $profilesSampleRate = (float)($_ENV['SENTRY_PROFILES_SAMPLE_RATE'] ?? $_SERVER['SENTRY_PROFILES_SAMPLE_RATE'] ?? 1.0);
 $maxBreadcrumbs = (int)($_ENV['SENTRY_MAX_BREADCRUMBS'] ?? $_SERVER['SENTRY_MAX_BREADCRUMBS'] ?? 50);
@@ -42,7 +42,7 @@ if (empty($sentryDsn)) {
     $scope->setTag('php_sapi', php_sapi_name());
     $scope->setTag('server', gethostname());
     $scope->setTag('component', 'demo-app');
-    $scope->setTag('version', $_ENV['SENTRY_RELEASE'] ?? $_SERVER['SENTRY_RELEASE'] ?? 'mini-project@1.0.0');
+    $scope->setTag('version', $_ENV['SENTRY_RELEASE'] ?? $_SERVER['SENTRY_RELEASE'] ?? 'mini-project@0.1.0');
     
     // Context für detaillierte Infos
     $scope->setContext('runtime', [
